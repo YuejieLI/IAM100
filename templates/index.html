@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<hr>
+
+<h1>Business Object Deletion Tool for Course IAM100</h1>
+
+<hr>
+
+<br>
+
+<button onclick="window.location.href='{{ url_for("get_jwt") }}'">1. Click to Obtain Json Web Token</button><br><br>
+
+<button onclick="window.location.href='{{ url_for("delete_equipment") }}'">2. Click to Delete Equipments</button><br><br>
+
+<button onclick="window.location.href='{{ url_for("delete_location") }}'">3. Click to Delete locations</button><br><br>
+
+<button onclick="window.location.href='{{ url_for("delete_equipment_request") }}'">4. Click to Delete Equipment Requests</button><br><br>
+
+<button onclick="window.location.href='{{ url_for("delete_model") }}'">5. Click to Delete Models</button><br><br>
+
+<button onclick="window.location.href='{{ url_for("delete_riskassessment") }}'">6. Click to Delete Risk Assessments</button><br><br>
+
+
+<button onclick="window.location.href='{{ url_for("delete_all") }}'">7. Click to Delete ALL Business Objects above at Once</button><br><br>
+
+<hr>
+
+<h1>Random IoT data Emulator Tool for Course IAM100</h1>
+
+<hr>
+
+<br>
+
+<button onclick="window.location.href='{{ url_for("random_iot_emulator") }}'">8. Click to Generate 10 groups of Random IoT data</button><br><br>
+
+
+
+
+
+
+{#这是一个注释#}
+{##}
+{#{{ url_str }}<br>#}
+{##}
+{#{{ my_dic }}<br>#}
+{##}
+{#{{ my_list.3}}<br>#}
+{##}
+{#{{ my_list.7}}<br>#}
+{#{{ my_list[3]}}<br>#}
+{##}
+{#{{ my_dic.name }}<br>#}
+{##}
+{#{{ my_dic['age']}}<br>#}
+
+
+
+
+
+{#{% for num in my_list %}#}
+{#    {% if num > 5 %}#}
+{#    {{ num }}<br>#}
+{##}
+{##}
+{#    {% endif %}#}
+{##}
+{#{% endfor %}#}
+{##}
+{##}
+{##}
+{##}
+{#<hr>#}
+{##}
+{#{{ url_str | upper }}<br>#}
+{##}
+{#{{ url_str | reverse |upper | lower | reverse}}<br>#}
+
+{#<button name="deleteBtn" onclick="delete_equipment()">Delete</button>#}
+
+{#<button name="forwardBtn" onclick="move_forward()">Forward</button>#}
+
+{#<a href="{{url_for('test')}}">我是测试</a><br>#}
+
+{#<button onclick="window.location.href='{{ url_for("test") }}'">点我啊</button>#}
+
+
+
+
+
+</body>
+</html>
